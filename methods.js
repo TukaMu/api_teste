@@ -56,7 +56,7 @@ methods.delete('/deletar:id', (req, res) => {
 })
 
 //ATUALIZAR TAREFA
-methods.put('/atualizar:id/:action', (req, res) => {
+methods.get('/atualizar:id/:action', (req, res) => {
     const id = req.params.id;
     const action = req.params.action;
 
